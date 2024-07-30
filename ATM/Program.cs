@@ -11,7 +11,7 @@ public class cardHolder
     public cardHolder(string cardNum, int pin, String firstName, String lastName, double balance)
     {
         this.cardNumber = cardNum;
-        this.pin = 0;
+        this.pin = pin;
         this.firstName = firstName;
         this.lastName = lastName;
         this.balance = balance;
@@ -162,7 +162,7 @@ public class cardHolder
                 Console.WriteLine("Incorrect Pin.");
             }
 
-         }
+        }
 
         Console.WriteLine("Welcome " + currUser.getFirstName());
 
