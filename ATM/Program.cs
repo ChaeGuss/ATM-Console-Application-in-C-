@@ -169,6 +169,31 @@ public class cardHolder
         int option = 0;
         do
         {
+            printOptions();
+            try
+            {
+                option = int.Parse(Console.ReadLine());
+            }
+            catch { }
+            if (option == 1)
+            {
+                deposit(currUser);
+            }
+            else if (option == 2)
+            {
+                withdraw(currUser);
+            }
+            else if (option == 3)
+            {
+                balance(currUser);
+            }
+            else if (option == 4)
+            {
+                break;
+            }
+            else {
+                option = 0;
+            }
         }
         while (option != 4);
         Console.WriteLine("Thank you! Have a nice day!");
